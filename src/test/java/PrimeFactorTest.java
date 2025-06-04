@@ -28,5 +28,9 @@ class PrimeFactorTest {
     void primeFactorTest2(){
         assertEquals(Arrays.asList(2),pf.of(2));
     }
+    @Test
+    void primeFactorTest3(){
+        assertEquals(Arrays.asList(3),pf.of(3));
+    }
 
 }
