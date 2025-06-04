@@ -4,24 +4,15 @@ import java.util.List;
 public class PrimeFactor {
     public List<Integer> of(int number) {
         List<Integer> result = new ArrayList<>();
-        if(number>1){
-            if(number ==4 ){
-                while(number%2==0){
-                    result.add(2);
-                    number/=2;
+        if(number>=1){
+            for (int divider =2 ;number >1;divider++){
+                while(number%divider==0){
+                    result.add(divider);
+                    number/=divider;
                 }
-            } else if (number == 6) {
-                while(number%2==0){
-                    result.add(2);
-                    number/=2;
-                }
-                while(number%3==0){
-                    result.add(3);
-                    number/=3;
-                }
-            } else{
-                result.add(number);
             }
+        } else{
+            result.add(number);
         }
         return result;
     }
