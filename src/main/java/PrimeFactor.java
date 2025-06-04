@@ -6,8 +6,12 @@ public class PrimeFactor {
         List<Integer> result = new ArrayList<>();
         if(number>1){
             if(number ==4 ){
-                result.add(2);
-                result.add(2);
+                if(number%2 ==0){
+                    result.add(2);
+                }
+                if(number%2 ==0){
+                    result.add(2);
+                }
             }else{
                 result.add(number);
             }
